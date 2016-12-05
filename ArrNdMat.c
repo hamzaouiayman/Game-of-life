@@ -81,10 +81,6 @@ couple * add_couple(couple *head, int value1, int value2)
 }
 
 
-
-
-
-
 // cette fonction detruit la liste .. free les elements
 void destroy_list(couple * head)
 {
@@ -199,12 +195,7 @@ couple * detecter_les_vivants(int ** M,int N)
               //cellule vivante dont le nombre des voisins est 2 ou 3
                 if ((nbr_voisins(M,i,j,N)==3)||(nbr_voisins(M,i,j,N)==2)) //
                 {
-                   
-                    {
                         head=add_couple(head,i, j);
-
-                    }
-
                 }
 
             }
